@@ -1,0 +1,107 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* My Color Palette
+Color 1: 33AAFF
+Color 2: 2127B2
+Color 3: FFA41F
+*/
+
+
+
+/*********************************
+
+    TRANSPARENT BACKGROUND
+
+**********************************/
+
+/*********************************
+
+            BASIC STRUCTURE
+
+**********************************/
+
+#wrapper {
+		width: 960px;
+		padding: 5px;
+		margin: 20px auto;
+}
+
+#header {
+		height: 100px;
+}
+
+#sidebar {
+		float: left;
+		width: 300px;
+}
+
+#content {
+		float: right;
+		width: 600px;	
+}
+
+#footer {
+		clear: both;
+}
+
+/*********************************
+
+            COLORS & FONTS
+
+**********************************/
+
+body {
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+		color: orange;
+		/*background-color: #9FC;*/
+		background-image: url("../images/background2.gif");
+}
+
+#header, #sidebar, #content, #footer {
+		background-color: rgba( 255, 255, 255, 0.8);
+		margin-bottom: 4px;
+		border: groove;
+		border-radius: 8px;
+		border-color: grey;
+		padding-left: 4px;
+		padding-right: 4px;
+}
+/*********************************
+
+            RESPONSIVE WIDTH
+
+**********************************/
+@media screen and (max-width: 980px) {
+		#wrapper {
+				width: 94%;
+		}
+		#content {
+				width: 65%;
+		}
+		#sidebar {
+				width: 30%;
+		}
+}
+
+@media screen and (max-width: 700px) {
+		#content, #sidebar {
+				width: auto;
+				float: none;
+		}
+		#header {
+				height: auto;
+}
+
+@media screen and (max-width: 480px) {
+		#content, #sidebar {
+				width: auto;
+				float: none;
+		}
+		#header {
+				height: auto;
+}
+}
+
+
+
